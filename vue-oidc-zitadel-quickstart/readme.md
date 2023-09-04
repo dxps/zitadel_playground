@@ -2,6 +2,8 @@
 
 A Vue.js based sample as a showcase of using OIDC's PKCE and Zitadel.
 
+This is a project that uses [Vue 3](https://vuejs.org/) and [Vite](https://vitejs.dev/).
+
 ## Usage
 
 - Use `npm run dev` to compile and hot-reload on code changes.
