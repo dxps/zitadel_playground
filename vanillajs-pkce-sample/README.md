@@ -1,4 +1,6 @@
-# A Simple JavaScript PKCE Example
+# A Vanilla JavaScript PKCE Example
+
+This is a pure JavaScript implementation of using the OIDC PKCE flow with Zitadel.
 
 <br/>
 
@@ -10,7 +12,7 @@ Although this is not a mandatory requirement, [Node.js](https://nodejs.org/en) i
 
 ### Client
 
-The client -- the HTML page -- needs to be configured with the following options, as can be found in the `<script>` section of the page:
+The client -- the HTML page -- needs to be configured with the following options, as can be found in the `<script⁸>` section of the page:
 
 ```js
 const AUTHORIZE_ENDPOINT = 'http://localhost:8080/oauth/v2/authorize'
@@ -21,7 +23,7 @@ const REDIRECT_URL = 'http://localhost:1234'
 
 ## Usage
 
-### Serving the Sample HTML File
+### Serving the HTML File
 
 The HTML needs to be served somehow from a Web server. Because the client is just a static HTML page, this can be done with a trivial server configuration. Below are a couple of ways to easily serve the static HTML page:
 
@@ -39,7 +41,7 @@ Go to [http://localhost:1234](http://localhost:1234) to access this sample.
 
 ## Implementation Notes
 
-This section describe the implementation details of the PKCE flow.
+This section provides the implementation details for using the PKCE flow to delegate the user authentication to Zitadel.
 
 #### Creating the Verifier
 
